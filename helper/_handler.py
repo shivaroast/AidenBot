@@ -6,7 +6,7 @@ from functools import partial as pt
 from . import (
     cat_wrap, convert, curx_wrap, combine, echo, shout,
     mock, space, aesthetic, bawl1, bawl2, is_palindrome, rng, rpick, emote,
-    translate, isup, kbbi_def, calc, ask, mirror_toggle, define,
+    translate, isup calc, ask, mirror_toggle, define,
     reddit_hot, slap, stalkig_wrap, stalktwt, urban, wiki_get, wiki_lang,
     wolfram, wolfram_wrap, weather
 )
@@ -331,7 +331,7 @@ def predefined(key):
     '''
     Predefined strings.
     '''
-    strings = {'about': "AidenBot\nhttps://github.com/laymonage/AidenBot",
+    strings = {'about': "ShivaBot\nBeta 1.1",
                'lenny': '( ͡° ͜ʖ ͡°)',
                'shrug': '¯\\_(ツ)_/¯',
                'stalk': CMD_HELP['stalk'],
@@ -354,7 +354,7 @@ def command_handler(text, user, myself, set_id):
                'stalk': pt(predefined, 'stalk'),
                'text': pt(predefined, 'text')}
 
-    single_args = {'ask': pt(ask, id_=True),
+    single_args = {'ask': pt(ask, id_=False),
                    'aes': aesthetic,
                    'bawl1': bawl1,
                    'bawl2': bawl2,
@@ -364,8 +364,6 @@ def command_handler(text, user, myself, set_id):
                    'echo': echo,
                    'isup': isup,
                    'isupd': pt(isup, detailed=True),
-                   'kbbi': kbbi_def,
-                   'kbbix': pt(kbbi_def, ex=True),
                    'mcs': ask,
                    'me': pt(emote, user.display_name),
                    'mock': mock,
