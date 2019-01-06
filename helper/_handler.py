@@ -8,7 +8,7 @@ from . import (
     mock, space, aesthetic, bawl1, bawl2, is_palindrome, rng, rpick, emote,
     translate, isup, calc, ask,
     mirror_toggle, define, reddit_hot, slap, stalkig_wrap, stalktwt,
-    ticket_add, ticket_rem, ticket_get, surprise_wrap, urban, wiki_get,
+    ticket_add, ticket_rem, ticket_get, urban, wiki_get,
     wiki_lang, wolfram, wolfram_wrap, weather
 )
 
