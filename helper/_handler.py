@@ -4,7 +4,7 @@ Command handler module for AidenBot
 
 from functools import partial as pt
 from . import (
-    cat_wrap, convert, curx_wrap, combine, echo, shout,
+    about, cat_wrap, convert, curx_wrap, combine, echo, shout,
     mock, space, aesthetic, bawl1, bawl2, is_palindrome, rng, rpick, emote,
     translate, isup, calc, ask,
     mirror_toggle, define, reddit_hot, slap, stalkig_wrap, stalktwt,
