@@ -14,7 +14,7 @@ Example:
 '''
 
 from . import (
-    cat, convert, stalkig, wolfram
+    cat, convert, stalkig, surprise, wolfram
 )
 
 
