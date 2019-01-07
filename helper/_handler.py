@@ -344,18 +344,24 @@ def command_handler(text, user, myself, set_id):
     '''
     Command handler for AidenBot.
     '''
+def command_handler(text, user, myself, set_id):
+    '''
+    Command handler for AidenBot.
+    '''
+    itsme = user.user_id == myself.user_id
     command = text.split(maxsplit=1)
     cmd = text.lower().split(maxsplit=1)
     result = None
 
-    no_args = {'about': pt(predefined, 'about'),
+    no_args = {'about': about,
                'lenny': pt(predefined, 'lenny'),
                'mirror': pt(mirror_toggle, set_id=set_id),
                'shrug': pt(predefined, 'shrug'),
                'stalk': pt(predefined, 'stalk'),
-               'text': pt(predefined, 'text')}
+               'text': pt(predefined, 'text'),
+               'tix': pt(ticket_get, allowed=itsme)}
 
-    single_args = {'ask': pt(ask, id_=False),
+    single_args = {'ask': pt(ask, id_=True),
                    'aes': aesthetic,
                    'bawl1': bawl1,
                    'bawl2': bawl2,
@@ -371,6 +377,7 @@ def command_handler(text, user, myself, set_id):
                    'pal': is_palindrome,
                    'ppal': pt(is_palindrome, perfect=True),
                    'pick': rpick,
+                   'rtix': pt(ticket_rem, allowed=itsme),
                    'shout': shout,
                    'slap': pt(slap, user, myself=myself),
                    'spc': space,
@@ -383,6 +390,7 @@ def command_handler(text, user, myself, set_id):
                    'wiki': pt(wiki_get, set_id=set_id),
                    'wikilang': pt(wiki_lang, set_id=set_id),
                    'wolframs': wolfram}
+
 
     double_args = {'cur': convert,
                    'reddit': pt(reddit_hot, splitted=True),
