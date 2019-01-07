@@ -371,7 +371,6 @@ def command_handler(text, user, myself, set_id):
                    'pal': is_palindrome,
                    'ppal': pt(is_palindrome, perfect=True),
                    'pick': rpick,
-                   'rtix': pt(ticket_rem, allowed=itsme),
                    'shout': shout,
                    'slap': pt(slap, user, myself=myself),
                    'spc': space,
