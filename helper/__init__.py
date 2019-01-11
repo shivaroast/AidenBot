@@ -4,14 +4,14 @@ Initialization
 # pylint: disable=unused-import
 # flake8: noqa
 
-from .bencoin import AkunBenCoin
+#  from .bencoin import AkunBenCoin
 from .caturl import cat
 from .currency import convert
 from .dropson import dbx_dl, dbx_ul, to_json, get_json
 from .file import mirror_toggle, mirror
 from .gtrans import translate
 from .isitup import isup
-from .kbbih import kbbi_def
+#   from .kbbih import kbbi_def
 from .mathjs import calc
 from .mcs import ask
 from .memes import getmemes, meme, updmemes
