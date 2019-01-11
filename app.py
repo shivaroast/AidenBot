@@ -21,7 +21,6 @@ from linebot.models import (
 )
 
 from helper._handler import command_handler
-from helper.file import mirror
 
 
 APP = Flask(__name__)
