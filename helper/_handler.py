@@ -415,6 +415,6 @@ def command_handler(text, user, myself, set_id):
             
     except (IndexError, TypeError, ValueError) as error:
           print(error)
-        result = str(error)
+          result = str(error)
 
     return result
