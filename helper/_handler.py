@@ -7,7 +7,7 @@ from . import (
     about, cat_wrap, convert, curx_wrap, combine, echo, shout,
     mock, space, aesthetic, bawl1, bawl2, is_palindrome, rng, rpick, emote,
     translate, isup, calc, ask,
-    mirror_toggle, define, reddit_hot, slap, stalkig_wrap, stalktwt,
+    define, reddit_hot, slap, stalkig_wrap, stalktwt,
     ticket_add, ticket_rem, ticket_get, surprise_wrap, urban, wiki_get,
     wiki_lang, wolfram, wolfram_wrap, weather
 )
@@ -350,7 +350,6 @@ def command_handler(text, user, myself, set_id):
 
     no_args = {'about': about,
                'lenny': pt(predefined, 'lenny'),
-               'mirror': pt(mirror_toggle, set_id=set_id),
                'shrug': pt(predefined, 'shrug'),
                'stalk': pt(predefined, 'stalk'),
                'text': pt(predefined, 'text'),
