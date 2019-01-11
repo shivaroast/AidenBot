@@ -18,7 +18,7 @@ HELP_MSG = ("Available commands:\n"
             "about, bye, help, profile, ticket\n"
             "\n"
             "\U00100077 [knowledge]:\n"
-            "define, kbbi, reddit, tl, urban, wiki, wolfram\n"
+            "define, reddit, tl, urban, wiki, wolfram\n"
             "\n"
             "\U001000B4 [tools]:\n"
             "ask, cur, calc, isup, mirror, pick, rng, stalk, weather\n"
@@ -26,7 +26,7 @@ HELP_MSG = ("Available commands:\n"
             "\U0010002D [chat enhancer]:\n"
             "cat, meme, slap, text\n"
             "\n"
-            "Use /help <command> for more information. Example: /help kbbi")
+            "Use /help <command> for more information. Example: /help wiki")
 
 CMD_TEXT = ("Available text commands:\n"
             "aes, bawl1, bawl2, cmb, echo, lenny, me, mock, pal, ppal, shout, "
