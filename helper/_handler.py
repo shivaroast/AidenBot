@@ -4,9 +4,9 @@ Command handler module for AidenBot
 
 from functools import partial as pt
 from . import (
-    about, AkunBenCoin, cat_wrap, convert, curx_wrap, combine, echo, shout,
+    about, cat_wrap, convert, curx_wrap, combine, echo, shout,
     mock, space, aesthetic, bawl1, bawl2, is_palindrome, rng, rpick, emote,
-    translate, isup, kbbi_def, calc, ask, getmemes, meme_wrap, updmemes,
+    translate, isup, calc, ask,
     mirror_toggle, define, reddit_hot, slap, stalkig_wrap, stalktwt,
     ticket_add, ticket_rem, ticket_get, surprise_wrap, urban, wiki_get,
     wiki_lang, wolfram, wolfram_wrap, weather
@@ -332,8 +332,7 @@ def predefined(key):
     '''
     Predefined strings.
     '''
-    strings = {'bencoin': AkunBenCoin.intro,
-               'lenny': '( ͡° ͜ʖ ͡°)',
+    strings = {'lenny': '( ͡° ͜ʖ ͡°)',
                'shrug': '¯\\_(ツ)_/¯',
                'stalk': CMD_HELP['stalk'],
                'text': CMD_TEXT}
@@ -350,16 +349,14 @@ def command_handler(text, user, myself, set_id):
     result = None
 
     no_args = {'about': about,
-               'bencoin': pt(predefined, 'bencoin'),
                'lenny': pt(predefined, 'lenny'),
                'mirror': pt(mirror_toggle, set_id=set_id),
                'shrug': pt(predefined, 'shrug'),
                'stalk': pt(predefined, 'stalk'),
                'text': pt(predefined, 'text'),
-               'tix': pt(ticket_get, allowed=itsme),
-               'updmemes': pt(updmemes, allowed=itsme)}
+               'tix': pt(ticket_get, allowed=itsme)}
 
-    single_args = {'ask': pt(ask, id_=True),
+    single_args = {'ask': pt(ask, id_=False),
                    'aes': aesthetic,
                    'bawl1': bawl1,
                    'bawl2': bawl2,
@@ -369,8 +366,6 @@ def command_handler(text, user, myself, set_id):
                    'echo': echo,
                    'isup': isup,
                    'isupd': pt(isup, detailed=True),
-                   'kbbi': kbbi_def,
-                   'kbbix': pt(kbbi_def, ex=True),
                    'mcs': ask,
                    'me': pt(emote, user.display_name),
                    'mock': mock,
@@ -399,9 +394,7 @@ def command_handler(text, user, myself, set_id):
     distinct_commands = {'cat': cat_wrap,
                          'cats': pt(surprise_wrap, safe=True),
                          'curx': pt(curx_wrap, *command[1:]),
-                         'getmemes': pt(getmemes, *command[1:]),
                          'help': pt(get_help, *cmd[1:]),
-                         'meme': pt(meme_wrap, *command[1:]),
                          'stalkig': pt(stalkig_wrap, *command[1:]),
                          'surprise': surprise_wrap,
                          'wolfram': pt(wolfram_wrap, *command[1:])}
