@@ -136,15 +136,15 @@ def handle_text_message(event):
         Leave a chat room.
         '''
         if isinstance(event.source, SourceGroup):
-            quickreply("Leaving group...")
+            quickreply("Check ya later!")
             AIDEN.leave_group(event.source.group_id)
 
         elif isinstance(event.source, SourceRoom):
-            quickreply("Leaving room...")
+            quickreply("Check ya later!")
             AIDEN.leave_room(event.source.room_id)
 
         else:
-            quickreply("I can't leave a 1:1 chat.")
+            quickreply("I can't leave a 1:1 chat, idiot.")
 
     def getprofile():
         '''
