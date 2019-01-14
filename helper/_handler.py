@@ -418,8 +418,9 @@ def command_handler(text, user, myself, set_id):
             result = distinct_commands[cmd[0]]()
 
             
-    except (IndexError, TypeError, ValueError) as error:
-          print(error)
-          result = str(error)
+    except (IndexError, TypeError, ValueError):
+        result = ("Invalid format.\n"
+                  "Please see /help {} for more info."
+                  .format(cmd[0]))
 
     return result
