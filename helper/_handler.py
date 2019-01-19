@@ -15,16 +15,16 @@ from . import (
 HELP_MSG = ("Available commands:\n"
             "\n"
             "\U00100036 [meta]:\n"
-            "about, bye, help, profile, ticket\n"
+            "/about, /bye, /help, /commands, /profile, /ticket\n"
             "\n"
             "\U00100077 [knowledge]:\n"
-            "define, reddit, tl, urban, wiki, wolfram\n"
+            "/define, /reddit, /tl, /urban, /wiki, /wolfram\n"
             "\n"
             "\U001000B4 [tools]:\n"
-            "ask, cur, calc, isup, mirror, pick, rng, stalk, weather\n"
+            "/ask, /cur, /calc, /isup, /mirror, /pick, /rng, /stalk, /weather\n"
             "\n"
             "\U0010002D [chat enhancer]:\n"
-            "cat, slap, roast, text\n"
+            "cat, roast, slap, text\n"
             "\n"
             "Use /help <command> for more information. Example: /help wiki")
 
@@ -43,9 +43,9 @@ CMD_HELP = {'about': "Usage: /about\n"
                    .format(aesthetic('Repeat <something> aesthetically')),
 
             'ask': "Usage: /ask <question>\n"
-                   "Simulator Kulit Kerang Ajaib.\n"
-                   "Example: /ask Apa aku boleh makan?\n"
-                   "Note: use /mcs to get the answers in English",
+                   "8ball Simulator.\n"
+                   "Example: /ask Will I ever git gud?\n"
+                   "Note: use /mcs to get the answers in English if not already",
 
             'bawl1': "Usage: /bawl1 <something>\n"
                      "Repeat\n{}\n"
@@ -87,6 +87,9 @@ CMD_HELP = {'about': "Usage: /about\n"
 
             'cats': "Usage: /cats\n"
                     "Like /cat, but with a twist.",
+            
+            'commands': "Usage: /commands\n"
+                        "Brings up ShivaBOTS regular command word list.",
 
             'cmb': "Usage: /cmb <num> <cmd1> <cmd2> ... <cmdnum>\n"
                    "Combine <num> commands into one. Commands are executed "
@@ -364,6 +367,7 @@ def command_handler(text, user, myself, set_id):
                    'bawl1': bawl1,
                    'bawl2': bawl2,
                    'calc': calc,
+                   'commands': commands,
                    'cmb': combine,
                    'define': define,
                    'echo': echo,
