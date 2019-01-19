@@ -16,7 +16,8 @@ def slap(subject, target, myself):
     slap_items = ["frying pan", "baseball bat", "cricket bat", "guitar",
                   "crowbar", "wooden stick", "nightstick", "golf club",
                   "katana", "hand", "laptop", "book", "drawing book",
-                  "mouse", "keyboard"]
+                  "mouse", "keyboard", "dildo", "phallus object", "amputated body part"
+                  "cat", "dog", "zoo animal", "trident", "paddle", "lucille", "shiva's big dick"]
     s_name = subject.display_name
     itsme = subject.user_id == myself.user_id
     has_my_name = not itsme and myself.display_name.title() in s_name.title()
