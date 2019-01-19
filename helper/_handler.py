@@ -6,7 +6,7 @@ from functools import partial as pt
 from . import (
     about, cat_wrap, convert, curx_wrap, combine, echo, shout,
     mock, space, aesthetic, bawl1, bawl2, is_palindrome, rng, rpick, emote,
-    translate, isup, calc, ask, dadjoke,
+    translate, isup, calc, ask, randompic,
     define, reddit_hot, roast, slap, stalkig_wrap, stalktwt,
     ticket_add, ticket_rem, ticket_get, surprise_wrap, urban, wiki_get,
     wiki_lang, wolfram, wolfram_wrap, weather
@@ -369,7 +369,6 @@ def command_handler(text, user, myself, set_id):
                    'calc': calc,
                    'cmb': combine,
                    'define': define,
-                   'dadjoke': dadjoke,
                    'echo': echo,
                    'isup': isup,
                    'isupd': pt(isup, detailed=True),
@@ -379,6 +378,7 @@ def command_handler(text, user, myself, set_id):
                    'pal': is_palindrome,
                    'ppal': pt(is_palindrome, perfect=True),
                    'pick': rpick,
+                   'randompic': randompic,
                    'roast': roast,
                    'rtix': pt(ticket_rem, allowed=itsme),
                    'shout': shout,
