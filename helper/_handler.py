@@ -6,7 +6,7 @@ from functools import partial as pt
 from . import (
     about, cat_wrap, convert, curx_wrap, combine, echo, shout,
     mock, space, aesthetic, bawl1, bawl2, is_palindrome, rng, rpick, emote,
-    translate, isup, calc, ask, randompic,
+    translate, isup, calc, ask,
     define, reddit_hot, roast, slap, stalkig_wrap, stalktwt,
     ticket_add, ticket_rem, ticket_get, surprise_wrap, urban, wiki_get,
     wiki_lang, wolfram, wolfram_wrap, weather
@@ -192,7 +192,7 @@ CMD_HELP = {'about': "Usage: /about\n"
 
             'ppal': "Usage: /ppal <something>\n"
                     "Check if <something> is a perfect palindrome.\n"
-                    "Example: /ppal kasur nababan rusak",
+                    "Example: /ppal taco cat",
 
             'pick': "Usage: /pick <something1>;<something2>;...;<somethingN>\n"
                     "Pick a random item from a semicolon-separated list.\n"
@@ -238,7 +238,7 @@ CMD_HELP = {'about': "Usage: /about\n"
 
             'slap': "Usage: /slap <someone>\n"
                     "Slap <someone> with a random object.\n"
-                    "Example: /slap Pak Dengklek",
+                    "Example: /slap Scopely Employee",
 
             'spc': "Usage: /spc <something>\n"
                    "{}\n"
@@ -278,7 +278,7 @@ CMD_HELP = {'about': "Usage: /about\n"
                   "You can use auto as <src_lang> for auto-detection.\n"
                   "See cloud.google.com/translate/docs/languages for "
                   "a list of available languages.\n"
-                  "Example: /tl auto id Sorry for my English",
+                  "Example: /tl auto en Sorry for my English",
 
             'urban': "Usage: /urban <something>\n"
                      "Define <something>, retrieved from "
@@ -299,7 +299,7 @@ CMD_HELP = {'about': "Usage: /about\n"
             'wiki': "Usage: /wiki <title>\n"
                     "Summarize a Wikipedia article titled <title>, or get "
                     "a list of titles in the disambiguation page.\n"
-                    "Example: /wiki Vampire Weekend\n"
+                    "Example: /wiki Pink Floyd\n"
                     "Note: use /wikilang to change the language.",
 
             'wikilang': "Usage: /wikilang <language>\n"
@@ -309,12 +309,12 @@ CMD_HELP = {'about': "Usage: /about\n"
                         "in the Wiki column to set the language.\n"
                         "Language settings will be reset to default (en) "
                         "every once in a while.\n"
-                        "Example: /wikilang id",
+                        "Example: /wikilang en",
 
             'wolfram': "Usage: /wolfram <something>\n"
                        "Ask wolframalpha.com about <something>.\n"
                        "Returns an image of the result summary.\n"
-                       "Example: /wolfram Who are Cage the Elephant?\n"
+                       "Example: /wolfram Who are Pink Floyd?\n"
                        "Note: use /wolframs to get a short text answer.",
 
             'wolframs': "Usage: /wolframs <something>\n"
@@ -378,7 +378,6 @@ def command_handler(text, user, myself, set_id):
                    'pal': is_palindrome,
                    'ppal': pt(is_palindrome, perfect=True),
                    'pick': rpick,
-                   'randompic': randompic,
                    'roast': roast,
                    'rtix': pt(ticket_rem, allowed=itsme),
                    'shout': shout,
