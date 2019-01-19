@@ -26,7 +26,7 @@ HELP_MSG = ("Available commands:\n"
             "\U0010002D [chat enhancer]:\n"
             "/cat, /roast, /slap, /text\n"
             "\n"
-            "Use /help <command> for more information. Example: /help wiki")
+            "Use /help <command> for more information. \nExample: /help wiki")
 
 CMD_TEXT = ("Available text commands:\n"
             "aes, bawl1, bawl2, cmb, echo, lenny, me, mock, pal, ppal, shout, "
