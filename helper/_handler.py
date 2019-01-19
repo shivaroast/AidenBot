@@ -24,7 +24,7 @@ HELP_MSG = ("Available commands:\n"
             "/ask, /cur, /calc, /isup, /mirror, \n/pick, /rng, /stalk, /weather\n"
             "\n"
             "\U0010002D [chat enhancer]:\n"
-            "cat, roast, slap, text\n"
+            "/cat, /roast, /slap, /text\n"
             "\n"
             "Use /help <command> for more information. Example: /help wiki")
 
