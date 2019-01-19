@@ -6,7 +6,7 @@ dadjoke helper module
 import requests
 
 
-def cat():
+def dadjoke():
     '''
     Return a dad joke.
     '''
