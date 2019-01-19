@@ -1,16 +1,16 @@
 '''
-dadjoke helper module
+random photo helper module
 (c) 2018 - laymonage
 '''
 
 import requests
 
 
-def dadjoke():
+def randompic():
     '''
-    Return a dad joke.
+    Return a random pic.
     '''
-    url = 'http://icanhazdadjoke.com/'
+    url = 'https://picsum.photos/720/480/?random'
     req = requests.get(url)
     url = req.url.replace('http://', 'https://')
     return url
