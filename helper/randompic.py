@@ -10,7 +10,7 @@ def randompic():
     '''
     Return a random pic.
     '''
-    url = 'https://picsum.photos/720/480/?random'
+    url = 'http://picsum.photos/720/480/?random'
     req = requests.get(url)
     url = req.url.replace('http://', 'https://')
     return url
