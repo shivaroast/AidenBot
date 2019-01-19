@@ -16,7 +16,6 @@ from .mathjs import calc
 from .mcs import ask
 #   from .memes import getmemes, meme, updmemes
 from .oxdict import define
-from .randompic import randompic
 from .reddit import reddit_hot
 from .roast import roast
 from .simpletext import (
