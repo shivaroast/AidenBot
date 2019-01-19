@@ -367,7 +367,6 @@ def command_handler(text, user, myself, set_id):
                    'bawl1': bawl1,
                    'bawl2': bawl2,
                    'calc': calc,
-                   'commands': commands,
                    'cmb': combine,
                    'define': define,
                    'echo': echo,
