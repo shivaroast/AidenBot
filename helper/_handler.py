@@ -372,7 +372,7 @@ def command_handler(text, user, myself, set_id):
                    'echo': echo,
                    'isup': isup,
                    'isupd': pt(isup, detailed=True),
-                   'mcs': ask,
+                   '8ball': ask,
                    'me': pt(emote, user.display_name),
                    'mock': mock,
                    'pal': is_palindrome,
