@@ -21,7 +21,7 @@ HELP_MSG = ("Available commands:\n"
             "/define, /reddit, /tl, /urban, \n/wiki, /wolfram\n"
             "\n"
             "\U001000B4 [tools]:\n"
-            "/ask, /cur, /calc, /isup, /mirror, \n/pick, /rng, /stalk, /weather\n"
+            "/8ball, /cur, /calc, /isup, /mirror, \n/pick, /rng, /stalk, /weather\n"
             "\n"
             "\U0010002D [chat enhancer]:\n"
             "/cat, /roast, /slap, /text\n"
@@ -42,10 +42,10 @@ CMD_HELP = {'about': "Usage: /about\n"
                    "Example: /aes thetic"
                    .format(aesthetic('Repeat <something> aesthetically')),
 
-            'ask': "Usage: /ask <question>\n"
+            '8ball': "Usage: /8ball <question>\n"
                    "8ball Simulator.\n"
-                   "Example: /ask Will I ever git gud?\n"
-                   "Note: use /mcs to get the answers in English if not already",
+                   "Example: /8ball Will I ever git gud?\n"
+                   "Note: use /ask to get the answers in English if not already",
 
             'bawl1': "Usage: /bawl1 <something>\n"
                      "Repeat\n{}\n"
