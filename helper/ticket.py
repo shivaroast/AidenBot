@@ -18,7 +18,7 @@ def about():
     return dbx_dl(about_file).decode('utf-8').strip()
 
 
-def ticket_add(item, trim=True):
+def ticket_add(item, trim=False):
     '''
     Add a ticket.
     item (str): item to be added to the ticket list
