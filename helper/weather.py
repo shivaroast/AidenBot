@@ -1,4 +1,4 @@
-		"""
+"""
 Weather helper module.
  (c) 2018-2019 - laymonage
 """
