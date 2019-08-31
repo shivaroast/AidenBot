@@ -3,7 +3,7 @@ Weather helper module.
  (c) 2018-2019 - laymonage
 """
 
- import os
+import os
 from urllib.parse import quote
 import requests
 
