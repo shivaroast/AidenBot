@@ -1,6 +1,7 @@
 """
 Weather helper module.
- (c) 2018-2019 - laymonage
+
+(c) 2018-2019 - laymonage
 """
 
 import os
@@ -8,16 +9,17 @@ from urllib.parse import quote
 import requests
 
 
- def weather(keyword, metric=True):
+def weather(keyword, metric=True):
     """
     Send current weather condition of a location.
-     Retrieved from OpenWeather API.
+
+    Retrieved from OpenWeather API.
     keyword (str): location to look up in openweathermap.org
     """
     api_key = os.getenv('OPENWEATHER_API_KEY', None)
     units, symbol = ('metric', 'C') if metric else ('imperial', 'F')
 
-     url = ('https://api.openweathermap.org/data/2.5/weather?units={}&appid={}&{{}}'
+    url = ('https://api.openweathermap.org/data/2.5/weather?units={}&appid={}&{{}}'
            .format(units, api_key))
     if ';' in keyword:
         arg1, arg2 = keyword.split(';', maxsplit=2)
