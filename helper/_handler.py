@@ -374,7 +374,7 @@ def command_handler(text, user, myself, set_id):
                    'bawl2': bawl2,
                    'calc': calc,
                    'cmb': combine,
-                   'define': define,
+                   'define': _define,
                    'echo': echo,
                    'isup': isup,
                    'isupd': pt(isup, detailed=True),
