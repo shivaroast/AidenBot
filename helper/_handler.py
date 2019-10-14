@@ -6,8 +6,7 @@ from functools import partial as pt
 from . import (
     about, cat_wrap, convert, curx_wrap, combine, _define, echo, shout,
     mock, space, aesthetic, bawl1, bawl2, is_palindrome, rng, rpick, emote,
-    translate, isup, calc, ask,
-    define, reddit_hot, roast, slap, stalkig_wrap, stalktwt,
+    translate, isup, calc, ask, reddit_hot, roast, slap, stalkig_wrap, stalktwt,
     ticket_add, ticket_rem, ticket_get, surprise_wrap, urban, wiki_get,
     wiki_lang, wolfram, wolfram_wrap, weather
 )
